@@ -32,7 +32,7 @@ app.post('/post', async (req, res) => {
         }
         await operaciones.nuevoPost(usuario, URL, descripcion);
         res.status(201).json({
-            message: 'Post agregada con éxito.'
+            message: 'Post agregado con éxito.'
         })
     } catch (error) {
         log('Error al agregar el post.', error)
